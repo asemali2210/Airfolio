@@ -19,12 +19,12 @@ export default function Blogs() {
           </p>
         </div>
 
-        <div className="row row-cols-1 g-4">
+        <div className="row row-cols-1 row-cols-lg-2 g-4">
           {blogPosts.map((post) => (
             <div className="col" key={post.title}>
               <article className={styles["blogs__card"]}>
-                <div className="row g-0 align-items-center">
-                  <div className="col-md-4">
+                <div className="row g-0 align-items-center flex-column flex-md-row">
+                  <div className="col-md-5">
                     <Image
                       src={post.image}
                       alt={post.title}
@@ -33,7 +33,7 @@ export default function Blogs() {
                       className={styles["blogs__image"]}
                     />
                   </div>
-                  <div className="col-md-8">
+                  <div className="col-md-7">
                     <div className={styles["blogs__body"]}>
                       <div className={styles["blogs__meta"]}>
                         <span className={styles["blogs__meta-tag"]}>{post.category}</span>

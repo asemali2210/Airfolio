@@ -50,7 +50,7 @@ export const serviceCards = [
     alt: "Branding icon",
     title: "Branding",
     description:
-      "Shape cohesive brand systems that align voice, visuals, and guidelines so teams stay on message as you scale."
+      "Shape cohesive brand systems that align voice, visuals, and guidelines so you stay on message as you scale."
   }
 ];
 
@@ -213,4 +213,44 @@ export const faqItems = [
     answer:
       "Our core services include UI and UX design, Webflow development, branding systems, and growth driven marketing collateral."
   }
+];
+
+export const footerNavigation = [
+  {
+    heading: "Page",
+    links: [
+      { label: "Home", href: "#hero" },
+      { label: "About", href: "#about" },
+      { label: "Contact", href: "#contact" },
+      { label: "Portfolio", href: "#projects" },
+      { label: "Portfolio single", href: "#projects" }
+    ]
+  },
+  {
+    heading: "Shop",
+    links: [
+      { label: "Product Single", href: "#projects" },
+      { label: "Blog", href: "#blogs" },
+      { label: "Blog Post", href: "#blogs" }
+    ]
+  },
+  {
+    heading: "Utility Pages",
+    links: [
+      { label: "Styleguide", href: "#" },
+      { label: "Start Here", href: "#" },
+      { label: "404 Not Found", href: "#" },
+      { label: "Password Protected", href: "#" },
+      { label: "Licenses", href: "#" },
+      { label: "Changelog", href: "#" }
+    ]
+  }
+];
+
+export const footerSocialLinks = [
+  { label: "Facebook", href: "https://facebook.com", icon: "facebook" },
+  { label: "Instagram", href: "https://instagram.com", icon: "instagram" },
+  { label: "Twitter", href: "https://twitter.com", icon: "twitter" },
+  { label: "LinkedIn", href: "https://linkedin.com", icon: "linkedin" },
+  { label: "Youtube", href: "https://youtube.com", icon: "youtube" }
 ];

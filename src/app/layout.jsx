@@ -1,8 +1,9 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+﻿import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import "../styles/main.scss";
 
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 export const metadata = {
   title: "Airfolio",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
