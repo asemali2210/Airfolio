@@ -19,8 +19,8 @@ export default function Hero() {
             key={vector.modifier}
             src={vector.src}
             alt=""
-            width={320}
-            height={320}
+            width={50}
+            height={50}
             className={`${styles["hero__vector"]} ${
               styles[`hero__vector--${vector.modifier}`]
             }`}
