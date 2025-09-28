@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  background-color: #f6f8ff;
+  overflow: hidden;
+  padding: clamp(4rem, 8vw, 6rem) 0 4rem;
+
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__vectors {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  &__vector {
+    position: absolute;
+    opacity: 0.4;
+
+    &--one {
+      top: 3rem;
+      left: 6rem;
+      width: 220px;
+    }
+
+    &--two {
+      top: 4rem;
+      right: 5rem;
+      width: 280px;
+    }
+
+    &--three {
+      bottom: 4rem;
+      left: 2rem;
+      width: 200px;
+    }
+
+    &--four {
+      bottom: 5rem;
+      right: 4rem;
+      width: 180px;
+    }
+  }
+
+  &__eyebrow {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #056359;
+  }
+
+  &__headline {
+    margin: 0;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: #0d1b45;
+  }
+
+  &__description {
+    margin: 0;
+    color: #4b587c;
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  &__image {
+    width: min(100%, 520px);
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 24px 60px rgba(13, 27, 69, 0.12);
+  }
+
+  &__brands-label {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #637099;
+  }
+
+  &__brands-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__brand-logo {
+    width: min(160px, 100%);
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    &__vector {
+      opacity: 0.25;
+      width: 160px;
+    }
+  }
+}

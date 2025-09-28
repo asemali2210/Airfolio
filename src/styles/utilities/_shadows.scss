@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as vars;
+
+@each $name, $shadow in vars.$shadow-scale {
+  .shadow-#{$name} {
+    box-shadow: $shadow;
+  }
+}
+
+.shadow-none {
+  box-shadow: none;
+}

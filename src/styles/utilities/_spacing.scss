@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use '../abstracts/variables' as vars;
+
+@mixin spacing-classes($label, $size) {
+  .u-gap-#{$label} {
+    gap: $size;
+  }
+
+  .u-padding-#{$label} {
+    padding: $size;
+  }
+
+  .u-margin-#{$label} {
+    margin: $size;
+  }
+
+  .u-stack-#{$label} > * + * {
+    margin-top: $size;
+  }
+}
+
+@each $name, $value in vars.$spacing-scale {
+  @include spacing-classes($name, $value);
+}
+
+@each $alias, $reference in vars.$spacing-aliases {
+  $value: map.get(vars.$spacing-scale, $reference);
+
+  @if $value {
+    @include spacing-classes($alias, $value);
+  }
+}

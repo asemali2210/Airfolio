@@ -1,0 +1,33 @@
+@use "sass:map";
+@use "../abstracts/variables" as vars;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: vars.$font-family-base;
+  color: vars.$color-neutral-800;
+}
+
+@each $heading, $settings in vars.$heading-scale {
+  #{$heading},
+  .#{$heading} {
+    font-family: vars.$font-family-heading;
+    font-weight: 600;
+    font-size: map.get($settings, size);
+    line-height: map.get($settings, line-height);
+    margin-bottom: 0.5em;
+    letter-spacing: -0.02em;
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+  max-width: 65ch;
+}
+
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}

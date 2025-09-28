@@ -1,0 +1,63 @@
+﻿.faqs {
+  background-color: #ffffff;
+  padding: clamp(4rem, 8vw, 6rem) 0;
+
+  &__header {
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    text-align: center;
+  }
+
+  &__headline {
+    margin: 0;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    line-height: 1.2;
+    color: var(--color-ink-700);
+  }
+
+  &__description {
+    margin: 1rem 0 0 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(12, 25, 66, 0.78);
+  }
+
+  &__cta-box {
+    margin-top: 3rem;
+    background-color: #f0f8f8;
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+  }
+
+  &__cta-headline {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-ink-700);
+  }
+
+  &__cta-text {
+    margin: 0.75rem 0 1.5rem 0;
+    font-size: 1rem;
+    color: rgba(12, 25, 66, 0.7);
+  }
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--color-primary-1);
+  background-color: rgba(37, 91, 249, 0.08);
+}
+
+.accordion-body {
+  color: rgba(12, 25, 66, 0.75);
+  line-height: 1.7;
+}

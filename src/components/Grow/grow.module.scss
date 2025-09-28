@@ -1,0 +1,81 @@
+﻿.grow {
+  position: relative;
+  background-color: #255bf9;
+  overflow: hidden;
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  text-align: center;
+  color: #ffffff;
+
+  &__vectors {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  &__vector {
+    position: absolute;
+    opacity: 0.5;
+
+    &--one {
+      top: -4rem;
+      left: -6rem;
+      width: 220px;
+    }
+
+    &--two {
+      top: -5rem;
+      right: -4rem;
+      width: 260px;
+    }
+
+    &--three {
+      bottom: -4rem;
+      left: 8rem;
+      width: 200px;
+    }
+
+    &--four {
+      bottom: -6rem;
+      right: 10rem;
+      width: 220px;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  &__headline {
+    margin: 0;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    line-height: 1.15;
+    color: #ffffff;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  &__actions {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .grow {
+    &__vector {
+      opacity: 0.35;
+      width: 160px;
+    }
+  }
+}

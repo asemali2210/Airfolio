@@ -1,0 +1,28 @@
+@use "sass:map";
+@use "./abstracts/variables" as vars;
+@use "./base/reset";
+@use "./base/typography";
+@use "./utilities/shadows";
+@use "./utilities/spacing";
+@use "./utilities/text";
+
+:root {
+  --color-primary-1: #{vars.$color-primary-1};
+  --color-primary-2: #{vars.$color-primary-2};
+  --color-primary-3: #{vars.$color-primary-3};
+  --color-neutral-800: #{vars.$color-neutral-800};
+  --color-ink-700: #{vars.$color-ink-700};
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: map.get(vars.$spacing-scale, large);
+}
+
+.section--condensed {
+  padding-block: map.get(vars.$spacing-scale, medium);
+}

@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as vars;
+
+.text-neutral-800 {
+  color: vars.$color-neutral-800;
+}
+
+.text-primary-1 {
+  color: vars.$color-primary-1;
+}
+
+.text-primary-2 {
+  color: vars.$color-primary-2;
+}

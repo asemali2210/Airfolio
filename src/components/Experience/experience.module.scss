@@ -1,0 +1,83 @@
+.experience {
+  background-color: #f6f8ff;
+  padding: clamp(4rem, 8vw, 6rem) 0;
+
+  &__eyebrow {
+    margin: 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(62, 62, 112, 0.7);
+  }
+
+  &__headline {
+    margin: 0;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    line-height: 1.2;
+    color: var(--color-ink-700);
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: rgba(12, 25, 66, 0.78);
+  }
+
+  &__card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 2rem 1.75rem;
+    box-shadow: 0 32px 80px rgba(62, 62, 112, 0.14);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    height: 100%;
+  }
+
+  &__card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  &__icon {
+    font-size: 1.75rem;
+    color: var(--color-primary-1);
+  }
+
+  &__company {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-ink-700);
+  }
+
+  &__role {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(12, 25, 66, 0.9);
+  }
+
+  &__dates {
+    margin: 0;
+    font-size: 0.95rem;
+    color: rgba(12, 25, 66, 0.65);
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    color: rgba(12, 25, 66, 0.78);
+  }
+
+  &__image {
+    width: min(100%, 520px);
+    height: auto;
+    border-radius: 28px;
+    box-shadow: 0 32px 80px rgba(13, 27, 69, 0.14);
+  }
+}
