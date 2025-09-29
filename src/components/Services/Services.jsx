@@ -5,6 +5,7 @@ import Image from "next/image";
 import CtaButtons from "../CtaButtons/CtaButtons";
 import styles from "./services.module.scss";
 import { serviceCards, heroCtaButtons } from "../../data/content";
+import SectionDivider from "../SectionDivider/SectionDivider";
 
 export default function Services() {
   return (
@@ -19,8 +20,9 @@ export default function Services() {
           </div>
           <div className="col-lg-6">
             <p className={styles["services__description"]}>
-              I partner with founders and product teams to close the gap between an idea and a polished launch,
-              designing, building, and refining digital experiences that perform in the wild.
+              I partner with founders and product teams to close the gap between
+              an idea and a polished launch, designing, building, and refining
+              digital experiences that perform in the wild.
             </p>
           </div>
         </div>
@@ -40,17 +42,20 @@ export default function Services() {
                 </div>
                 <div>
                   <h3 className={styles["services__title"]}>{service.title}</h3>
-                  <p className={styles["services__text"]}>{service.description}</p>
+                  <p className={styles["services__text"]}>
+                    {service.description}
+                  </p>
                 </div>
               </article>
             </div>
           ))}
         </div>
 
-        <div className="d-flex justify-content-center mt-5">
+        <div className="d-flex justify-content-center mt-5 pb-3">
           <CtaButtons buttons={heroCtaButtons} layout="horizontal" />
         </div>
       </div>
+      <SectionDivider />
     </section>
   );
 }

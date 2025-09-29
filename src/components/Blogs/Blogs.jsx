@@ -13,9 +13,12 @@ export default function Blogs() {
       <div className="container">
         <div className={styles["blogs__header"]}>
           <p className={styles["blogs__eyebrow"]}>Inspiration</p>
-          <h2 className={styles["blogs__headline"]}>Discover the Design World</h2>
+          <h2 className={styles["blogs__headline"]}>
+            Discover the Design World
+          </h2>
           <p className={styles["blogs__description"]}>
-            Stay updated with the latest trends and insights in the design industry.
+            Stay updated with the latest trends and insights in the design
+            industry.
           </p>
         </div>
 
@@ -23,8 +26,8 @@ export default function Blogs() {
           {blogPosts.map((post) => (
             <div className="col" key={post.title}>
               <article className={styles["blogs__card"]}>
-                <div className="row g-0 align-items-center flex-column flex-md-row">
-                  <div className="col-md-5">
+                <div className="row g-0 flex-column flex-md-row">
+                  <div className="col-md-6">
                     <Image
                       src={post.image}
                       alt={post.title}
@@ -33,11 +36,15 @@ export default function Blogs() {
                       className={styles["blogs__image"]}
                     />
                   </div>
-                  <div className="col-md-7">
+                  <div className="col-md-6">
                     <div className={styles["blogs__body"]}>
                       <div className={styles["blogs__meta"]}>
-                        <span className={styles["blogs__meta-tag"]}>{post.category}</span>
-                        <span className={styles["blogs__meta-tag"]}>{post.readTime}</span>
+                        <span className={styles["blogs__meta-tag"]}>
+                          {post.category}
+                        </span>
+                        <span className={styles["blogs__meta-tag"]}>
+                          {post.readTime}
+                        </span>
                       </div>
                       <h3 className={styles["blogs__title"]}>{post.title}</h3>
                       <p className={styles["blogs__text"]}>{post.excerpt}</p>

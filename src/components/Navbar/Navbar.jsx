@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import styles from "./navbar.module.scss";
-
+import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 const navLinks = [
   { href: "#about", label: "About Us" },
   { href: "#services", label: "Services" },
@@ -51,7 +51,7 @@ export default function Navbar() {
         </motion.div>
 
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler ${styles["site-navbar__navbar-toggler"]}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#primaryNav"
@@ -59,18 +59,22 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon" />
+          <span>
+            <HiOutlineBars3BottomRight />
+          </span>
         </button>
 
         <div className="collapse navbar-collapse" id="primaryNav">
           <div
-            className={`d-lg-flex align-items-lg-center gap-lg-4 ms-lg-auto w-100 ${styles["site-navbar__sections"]}`}
+            className={`d-lg-flex d-flex align-items-center justify-content-between gap-lg-4 ms-lg-auto w-100 }`}
           >
-            <div className={`flex-grow-1 ${styles["site-navbar__links"]}`}>
-              <ul className="navbar-nav flex-lg-row align-items-lg-center justify-content-lg-end gap-lg-4 mb-3 mb-lg-0">
+            <div
+              className={`flex-grow-1 ${styles["site-navbar__links"]} d-flex flex-row  align-items-center`}
+            >
+              <ul className="navbar-nav d-flex flex-row  align-items-center  gap-4 ">
                 {navLinks.map((link) => (
                   <li
-                    className={`nav-item  ${styles["nav-item-custom"]}`}
+                    className={`nav-item  ${styles["site-navbar__nav-item-custom"]}`}
                     key={link.href}
                   >
                     <Link className="nav-link" href={link.href}>
@@ -80,7 +84,9 @@ export default function Navbar() {
                 ))}
               </ul>
             </div>
-            <div className={`text-lg-start ${styles["site-navbar__cta"]}`}>
+            <div
+              className={`text-lg-start ${styles["site-navbar__cta"]} d-flex justify-content-end align-items-center`}
+            >
               <Link
                 className={`btn px-4 py-2 ${styles["site-navbar__cta-button"]}`}
                 href="#contact"

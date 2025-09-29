@@ -14,32 +14,17 @@ export default function HomePage() {
     <>
       <Hero />
       <Services />
-      <SectionDivider />
       <About />
       <SectionDivider variant="top" />
       <Experience />
       <SectionDivider />
       <Projects />
-      <SectionDivider variant="top" />
       <Grow />
-      <SectionDivider />
       <Blogs />
-      <SectionDivider variant="top" />
+      <SectionDivider variant="topBlue" />
       <Testimonials />
-      <SectionDivider />
+      <SectionDivider variant="bottomBlue" />
       <Faqs />
-      <section id="portfolio" className="section section--condensed">
-        <div className="container">
-          <h2>Portfolio</h2>
-          <p>Selected works coming soon.</p>
-        </div>
-      </section>
-      <section id="contact" className="section section--condensed">
-        <div className="container">
-          <h2>Hire Me</h2>
-          <p>Let&apos;s collaborate on your next project.</p>
-        </div>
-      </section>
     </>
   );
 }

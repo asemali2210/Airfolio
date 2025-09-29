@@ -15,7 +15,8 @@ export default function Faqs() {
         <div className={styles["faqs__header"]}>
           <h2 className={styles["faqs__headline"]}>FAQs</h2>
           <p className={styles["faqs__description"]}>
-            Find answers to commonly asked questions about Airfolio and its services.
+            Find answers to commonly asked questions about Airfolio and its
+            services.
           </p>
         </div>
 
@@ -28,7 +29,9 @@ export default function Faqs() {
               <div className="accordion-item" key={item.question}>
                 <h2 className="accordion-header" id={headingId}>
                   <button
-                    className={`accordion-button ${isFirst ? "" : "collapsed"}`.trim()}
+                    className={`accordion-button ${
+                      isFirst ? "" : "collapsed"
+                    }`.trim()}
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target={`#${collapseId}`}
@@ -40,7 +43,9 @@ export default function Faqs() {
                 </h2>
                 <div
                   id={collapseId}
-                  className={`accordion-collapse collapse ${isFirst ? "show" : ""}`.trim()}
+                  className={`accordion-collapse collapse ${
+                    isFirst ? "show" : ""
+                  }`.trim()}
                   aria-labelledby={headingId}
                   data-bs-parent={`#faqs-${accordionId}`}
                 >
@@ -50,13 +55,18 @@ export default function Faqs() {
             );
           })}
         </div>
-
-        <div className={styles["faqs__cta-box"]}>
-          <p className={styles["faqs__cta-headline"]}>Still have questions?</p>
-          <p className={styles["faqs__cta-text"]}>Contact us for more information.</p>
-          <Button href="#contact" variant="primary">
-            Contact
-          </Button>
+        <div className="row justify-content-center">
+          <div className={styles["faqs__cta-box"]}>
+            <p className={styles["faqs__cta-headline"]}>
+              Still have questions?
+            </p>
+            <p className={styles["faqs__cta-text"]}>
+              Contact us for more information.
+            </p>
+            <Button href="#contact" variant="primary">
+              Contact
+            </Button>
+          </div>
         </div>
       </div>
     </section>

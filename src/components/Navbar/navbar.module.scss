@@ -36,6 +36,17 @@
     }
   }
 
+  &__navbar-toggler {
+    outline: 0;
+
+    border: none;
+    &:hover,
+    &:focus {
+      background-color: none;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
   &__brand-name {
     font-size: 1.125rem;
     letter-spacing: 0.04em;
@@ -49,9 +60,9 @@
   &__links {
     width: 100%;
   }
-  .nav-item-custom {
+  &__nav-item-custom {
     a {
-      color: #{vars.$color-neutral-800};
+      color: #{vars.$color-neutral-800} !important;
     }
   }
 
@@ -60,10 +71,10 @@
   }
 
   &__cta-button {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #{vars.$color-green};
+    color: #fff;
     border: none;
-    border-radius: 999px;
+    border-radius: 7px;
     font-weight: 600;
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 

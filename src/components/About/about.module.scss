@@ -1,12 +1,10 @@
 .about {
-  background-color: #ffffff;
   padding: clamp(4rem, 8vw, 6rem) 0;
 
   &__image {
     width: min(100%, 520px);
     height: auto;
     border-radius: 28px;
-    box-shadow: 0 32px 80px rgba(13, 27, 69, 0.12);
   }
 
   &__eyebrow {
@@ -29,7 +27,7 @@
     margin: 0;
     font-size: 1.05rem;
     line-height: 1.8;
-    color: rgba(12, 25, 66, 0.78);
+    color: #0c1942c7;
   }
 
   &__stat {
@@ -47,7 +45,7 @@
     margin: 0;
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--color-primary-1);
+    color: var(--color-ink-700);
   }
 
   &__stat-label {

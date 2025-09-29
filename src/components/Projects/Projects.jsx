@@ -30,7 +30,9 @@ export default function Projects() {
           variants={fadeUpVariants}
         >
           <p className={styles["projects__eyebrow"]}>Projects</p>
-          <h2 className={styles["projects__headline"]}>Discover Our Success Stories</h2>
+          <h2 className={styles["projects__headline"]}>
+            Discover Our Success Stories
+          </h2>
           <p className={styles["projects__description"]}>
             Explore our curated collection of successful projects.
           </p>
@@ -57,10 +59,15 @@ export default function Projects() {
                 />
                 <div className={styles["projects__body"]}>
                   <h3 className={styles["projects__title"]}>{project.title}</h3>
-                  <p className={styles["projects__text"]}>{project.description}</p>
+                  <p className={styles["projects__text"]}>
+                    {project.description}
+                  </p>
                   <div className={styles["projects__tags"]}>
                     {project.tags.map((tag) => (
-                      <span key={`${project.title}-${tag}`} className={styles["projects__tag"]}>
+                      <span
+                        key={`${project.title}-${tag}`}
+                        className={styles["projects__tag"]}
+                      >
                         {tag}
                       </span>
                     ))}

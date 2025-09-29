@@ -28,9 +28,11 @@ export default function About() {
               Who is responsible for all of this impressive effort?
             </h2>
             <p className={styles["about__text"]}>
-              I'm Jane, a senior product designer and Webflow developer who thrives on solving complex problems with
-              clear systems. Over the last decade I've partnered with startups and enterprise teams to ship
-              high-performing interfaces, prototype fast, and scale design languages that keep engineering velocity high.
+              I'm Jane, a senior product designer and Webflow developer who
+              thrives on solving complex problems with clear systems. Over the
+              last decade I've partnered with startups and enterprise teams to
+              ship high-performing interfaces, prototype fast, and scale design
+              languages that keep engineering velocity high.
             </p>
 
             <div className="row row-cols-1 row-cols-sm-3 g-3 mt-2">
@@ -55,4 +57,3 @@ export default function About() {
     </section>
   );
 }
-

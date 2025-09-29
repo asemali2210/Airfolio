@@ -6,6 +6,10 @@
     text-align: center;
     max-width: 720px;
     margin: 0 auto 3rem auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__eyebrow {
@@ -76,11 +80,11 @@
 
   &__tag {
     background-color: rgba(12, 25, 66, 0.08);
-    color: rgba(12, 25, 66, 0.75);
+    color: var(--color-ink-700);
     font-size: 0.85rem;
     font-weight: 600;
     padding: 0.35rem 0.75rem;
-    border-radius: 999px;
+    border-radius: 7px;
   }
 
   &__link {

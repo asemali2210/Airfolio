@@ -11,10 +11,18 @@ const IMAGE_BY_VARIANT = {
     src: "/assest/slash-bottom-divider.svg",
     alt: "decorative slash divider",
   },
+  topBlue: {
+    src: "/assest/slash-top-divider-blue.svg",
+    alt: "decorative slash divider",
+  },
+  bottomBlue: {
+    src: "/assest/slash-bottom-divider-blue.svg",
+    alt: "decorative slash divider",
+  },
 };
 
 export default function SectionDivider({ variant = "bottom" }) {
-  const imageData = IMAGE_BY_VARIANT[variant] ?? IMAGE_BY_VARIANT.bottom;
+  const imageData = IMAGE_BY_VARIANT[variant];
   const imageClass = [
     styles["section-divider__image"],
     styles[`section-divider__image--${variant}`],

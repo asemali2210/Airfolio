@@ -39,7 +39,7 @@ export default function Hero() {
               Showcase Your Work <br /> with Airfolio&apos;s <br /> Creative
               Solutions
             </h1>
-            <p className={`${styles["hero__description"]} mb-0`}>
+            <p className={`${styles["hero__description"]} mt-2 mb-0`}>
               Create stunning portfolios and websites with Airfolio&apos;s UI/UX
               design and Webflow development services.
             </p>
@@ -59,26 +59,34 @@ export default function Hero() {
             />
           </div>
         </div>
-
-        <div className="row align-items-center mt-5 gy-4">
-          <div className="col-md-auto">
-            <p className={styles["hero__brands-label"]}>
-              Trusted by leading companies
-            </p>
-          </div>
-          <div className="col">
-            <div className={styles["hero__brands-logos"]}>
-              {heroCompanyLogos.map((logo) => (
-                <Image
-                  key={logo.src}
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={160}
-                  height={60}
-                  className={styles["hero__brand-logo"]}
-                  loading="lazy"
-                />
-              ))}
+      </div>
+      <div className={styles["hero__bottom-content"]}>
+        <div className="container">
+          <div
+            className={`row align-items-center py-5  ${styles["hero__bottom-row"]}`}
+          >
+            <div className="col-md-auto mb-md-0 mb-3">
+              <p
+                className={`${styles["hero__brands-label"]} text-center text-md-start`}
+              >
+                Trusted by leading
+                <br className="d-md-block d-none" /> companies
+              </p>
+            </div>
+            <div className="col">
+              <div className={styles["hero__brands-logos"]}>
+                {heroCompanyLogos.map((logo) => (
+                  <Image
+                    key={logo.src}
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={120}
+                    height={20}
+                    className={styles["hero__brand-logo"]}
+                    loading="lazy"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

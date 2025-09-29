@@ -1,20 +1,26 @@
 .section-divider {
-  display: flex;
-  justify-content: center;
   background: transparent;
   padding-block: 0;
-
+  background-color: #fff;
+  width: 100%;
+  position: relative;
   &__image {
     width: 100%;
-    max-width: 1200px;
     height: auto;
-
-    &--top {
+    z-index: 1;
+    inset: 0;
+    position: relative;
+    top: -1px;
+    &--top,
+    &--topBlue {
       transform: translateY(-1px);
+      top: 4px;
     }
 
-    &--bottom {
-      transform: translateY(1px);
+    &--bottom,
+    &--bottomBlue {
+      margin-top: -10px;
+      top: -1px;
     }
   }
 }
