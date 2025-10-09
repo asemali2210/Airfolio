@@ -7,7 +7,7 @@ Welcome to the Airophlio Portfolio Website. This site showcases the work, projec
 
 ---
 
-Technologies Used
+Technologies Use
 
 Next.js: A React framework for server-side rendering and static site generation. This allows the website to be fast and SEO-friendly.
 
